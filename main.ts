@@ -1,7 +1,7 @@
 while (true) {
-    console.log(input.soundLevel() + input.lightLevel())
-    while (input.lightLevel() < 6) {
-        if (input.soundLevel() > 100) {
+    console.log("Sound level: " + input.soundLevel() + " ---" + " Light level: " + input.lightLevel())
+    while (input.lightLevel() < 7) {
+        if (input.soundLevel() > 50) {
             light.setAll(color.rgb(255, 0, 0))
             music.siren.playUntilDone()
         }
